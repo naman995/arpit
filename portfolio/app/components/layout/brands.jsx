@@ -49,24 +49,23 @@ const Brands = () => {
   return (
     <div className="flex mt-10 flex-col items-center justify-center">
       <p className="mx-auto text-[32px] font-semibold">Brands Work For</p>
-      <div className="w-auto grid grid-cols-5 gap-4 mt-10 ">
+      <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-10">
         {images.map((image, index) => (
           <div
             key={index}
-            className="flex items-center justify-center h-26 w-26 "
+            className="flex items-center justify-center w-full max-w-[150px] mx-auto"
           >
             <Image
-              className="p-12"
               src={image.src}
               alt={image.alt}
-              layout="responsive"
               width={100} // Adjust width as needed
               height={100} // Adjust height as needed
+              layout="intrinsic" // Use intrinsic for better scaling
             />
           </div>
         ))}
       </div>
-        <p className="mx-auto text-[32px] font-semibold">and many more</p>
+      <p className="mx-auto text-[32px] font-semibold mt-8">and many more</p>
     </div>
   );
 };
