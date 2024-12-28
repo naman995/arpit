@@ -4,6 +4,7 @@ import Herosection from '../components/layout/herosection'
 import Brands from '../components/layout/brands'
 import Quality from "../components/layout/quality";
 import Contactus from "../components/layout/contactus";
+import Latestwork from "../components/layout/latestwork";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
         <Herosection/>
         <Brands/>
         <Quality/>
+        <Latestwork/>
         <Contactus/>
     </div>
   )
