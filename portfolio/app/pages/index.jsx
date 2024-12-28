@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/common/navbar'
 import Herosection from '../components/layout/herosection'
 import Brands from '../components/layout/brands'
+import Quality from "../components/layout/quality";
 
 const Index = () => {
   return (
@@ -9,6 +10,7 @@ const Index = () => {
         <Navbar/>
         <Herosection/>
         <Brands/>
+        <Quality/>
     </div>
   )
 }
